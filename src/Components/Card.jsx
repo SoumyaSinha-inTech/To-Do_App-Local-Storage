@@ -2,15 +2,43 @@ import React from 'react'
 
 export default function Card() {
   return (
+    <div style={{ position: 'relative', width: '250px', marginTop: '60px', marginLeft: '50px' }}>
 
-         <div className="card" style="width: 18rem;">
-            <img src="..." className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+      {/* Image */}
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/010/793/873/small/a-lined-note-paper-covered-with-transparent-tape-on-a-yellow-background-with-a-white-checkered-pattern-free-png.png"
+        alt="note"
+        style={{ width: '100%' }}
+      />
 
+      {/* Text Content */}
+      <div
+        style={{
+          position: 'absolute',
+          top: '50px',
+          left: '20px',
+          right: '20px'
+        }}
+      >
+        <h5></h5>
+        <p></p>
+      </div>
+
+      {/* Buttons at bottom */}
+      <div
+        style={{
+          position: 'absolute',
+          bottom: '15px',
+          left: '15px',
+          right: '15px',
+          display: 'flex',
+          justifyContent: 'space-between'
+        }}
+      >
+        <button className="btn btn-warning">Edit</button>
+        <button className="btn btn-danger">Delete</button>
+      </div>
+
+    </div>
   )
 }
